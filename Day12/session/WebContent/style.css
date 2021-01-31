@@ -1,0 +1,23 @@
+@charset "UTF-8";
+html,
+body {
+    background-image: url('https://static3.cbrimages.com/wordpress/wp-content/uploads/2020/09/Death-Note-Light-L-and-Ryuk-Cropped.jpg');
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.parent {
+    width: 100%;
+}
+
+.container {
+    offset: inherit;
+}
+
+.card {
+    opacity: 0.8;
+    color: white;
+    font-family: cursive;
+    font-size: large;
+}
