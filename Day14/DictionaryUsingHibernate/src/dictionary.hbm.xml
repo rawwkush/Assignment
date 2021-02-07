@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+
+	<class name="com.thinkitive.Dictionary" table="demodictionary">
+		<id name="word" column="word" type="string">
+			<generator class="assigned"></generator>
+		</id>
+
+		<property name="mean" column="mean" type="string"></property>
+	</class>
+	
+</hibernate-mapping> 
