@@ -491,3 +491,5 @@ TypeScript extends JavaScript by adding types in javascript.
 Types provide a way to describe the shape of an object, providing better documentation, and allowing TypeScript to validate that your code is working correctly.
 <br>
 Writing types can be optional in TypeScript, because type inference allows you to get a lot of power without writing additional code.
+
+# Angular
