@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Demo</title>
+    <!-- <script>
+        var a = 9;
+        var b = 9.9;
+        var c = "Hi with js";
+        var d = true;
+        var e = {
+            name: 1,
+            ename: "abcd",
+            salary: 8089
+        };
+        var x = new Date();
+        document.write(a + "<br/>");
+        document.write(b + "<br/>");
+        document.write(c + "<br/>");
+        document.write(d + "<br/>");
+        document.write(e.ename + "<br/>");
+        document.write(x + "<br/>");
+    </script> -->
+    <script>
+        function hello() {
+            var temp = document.getElementById("mytxt").value;
+            temp = parseInt(temp);
+            var fact = 1;
+            while (temp > 0) {
+                fact = fact * temp;
+                temp--;
+            }
+            document.getElementById("mypara").innerHTML = "Factorial of Number is:" + fact;
+        }
+
+        function change() {
+            var x = document.getElementById("mypara").style.display;
+            if (x == "block") {
+                x = "none";
+                document.getElementById("mypara").style.display = "none";
+            } else {
+                x = "block";
+                document.getElementById("mypara").style.display = "block";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h3>Calculate Factorial of Number</h3>
+    Number: <input id="mytxt" type="text" />
+    <button onclick="hello()">Click Me</button>
+    <button onclick="change()">Change Style</button>
+    <p id="mypara"></p>
+</body>
+
+</html>

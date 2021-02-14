@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vallidation Demo</title>
+</head>
+
+<body>
+
+    <script>
+        function validate() {
+            var user = document.getElementById("txtusername").value;
+            var pass = document.getElementById("txtpass").value;
+            var para = document.getElementById("para").innerHTML;
+            para = para.split(" ");
+            var i = 0;
+            console.log(para);
+            if (user.length >= 8 && pass.length >= 8) {
+                for (i = 0; i < para.length; i++) {
+                    console.log(para[i]);
+                    if (para[i] == "Omkar") {
+                        return true
+                    }
+                }
+                return false;
+            } else {
+                return false;
+            }
+        }
+    </script>
+</body>
+
+<form action="http://www.google.com/" onsubmit="return validate()">
+    UserName:-<input type="text" id="txtusername" name="txtusername"><br/> Password:-
+    <input type="text" id="txtpass" name="txtpass"><br/>
+    <input type="submit" value="Submit">
+
+    <p id="para">Hi My name is Omkar</p>
+</form>
+
+</html>
