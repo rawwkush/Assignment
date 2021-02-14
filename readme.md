@@ -1,18 +1,18 @@
 # JDBC
 
-### 7 steps for connecting in jdbc
+**7 steps for connecting in jdbc**
 
-1. import package
-2. Load and Register the Drivers
-3. Establish the connection
-4. Create the statement
-5. Execute the Query
-6. Process result
-7. close the connection
+> 1. import package
+> 2. Load and Register the Drivers
+> 3. Establish the connection
+> 4. Create the statement
+> 5. Execute the Query
+> 6. Process result
+> 7. close the connection
+
+[click here for view Code](https://github.com/rawwkush/Assignment/blob/master/readme/jdbc_demo.md)
 
 ---
-
-click here for jdbc_demo.md
 
 # Servlet
 
@@ -52,7 +52,7 @@ this is how web.xml looks like
 
 In "web.xml" we have two tags <servlet> and <servlet-mapping>, In <Servlet> tag we add class name of the servlet and in <servlet-mapping> we specify url pattern(for this url this servlet will be called).
 
-###### Note: mapping can also be done using annotations
+> **Note: mapping can also be done using annotations**
 
 ### Calling servlet from another Servlet (Servlet Collaboration)
 
@@ -85,7 +85,7 @@ Also as it's not forwarding the request but instead redirecting it so it means r
     response.sendRedirect("newservler?key=" + data );
 ```
 
-##### NOTE: `Redirect is used in payment gateways, that's why we move from flipkart website to some another while paying online`
+> **Note: Redirect is used in payment gateways, that's why we move from flipkart website to some another while paying online**
 
 ---
 
@@ -98,7 +98,7 @@ Four ways of doing it.<br>
 3. URL Rewriting
 4. HttpSession Object (it is combination of 2 and 3)
 
-click here for session.md
+[click here for Code](https://github.com/rawwkush/Assignment/blob/master/readme/session.md)
 
 # Cookies
 
@@ -151,9 +151,9 @@ out.print("</body> </html>");
 
 Now if the page contains more data and more styling it will be chaotic to write html stuff here.
 
-#### So JSP came to Rescue
+> So JSP came to Rescue
 
-###### JSP = java server page
+> JSP = java server page
 
 JSP allows us to write JAva code inside the HTML.
 <br>
@@ -189,7 +189,7 @@ JSP gives to request and response object so you can work with them.
 
 We can't run JSP, as we have seen the TomCat Server is "Servlet Container" so we can only run servlet in tomcat, so how did JSP run in our code?
 
-- **So JSP code is actually converted into servlet.**
+> **So JSP code is actually converted into servlet.**
 
 so if you want to simply process something servlet is a good choice and if you want a html page then JSP.
 
@@ -197,16 +197,16 @@ so if you want to simply process something servlet is a good choice and if you w
 
 ### Tags in JSP
 
-- Directive
+- Directive:
   if you want to import a java pacakage so that u can use it in your JSP(which actually does import when jsp is converted into servlet).
 
-you can also include other jsp page, and other tags using this tag
+  you can also include other jsp page, and other tags using this tag
 
 ```
 <%@page import =" java.utils.Date "  %>
 ```
 
-- Declarative
+- Declarative:
   If you want to declare a global variable i.e a variable outside the service methods(like doGet() or doPost() ), we use this tag to declare the variable.
 
 ```
@@ -215,7 +215,7 @@ you can also include other jsp page, and other tags using this tag
 %>
 ```
 
-- Scriptlet
+- Scriptlet:
   All the code written inside the scriplet is transfered to the "service methods".
 
 ```
@@ -224,14 +224,14 @@ you can also include other jsp page, and other tags using this tag
 %>
 ```
 
-- Expression
+- Expression:
   IF you wanna print something instead of writing **out.print(value);** we can do this by using a tag
 
 ```
 <%= value  %>
 ```
 
-\*\* lets see how the Above code will look like in servlet after JSP is complied into servlet
+lets see how the Above code will look like in servlet after JSP is complied into servlet
 
 ```
 import java.utli.Date; // due to Directive tag
@@ -295,8 +295,9 @@ Every object in a JSP page will have a scope. Object scope in JSP is segregated 
 
 # MVC: Model View Controller
 
-**Keep Model as POJO**
-**Use DAO(Databse Aceess Object) for databse realted work(not compulsory but good practice)**
+> **Keep Model as POJO** <br>
+
+> **Use DAO(Databse Aceess Object) for databse realted work(not compulsory but good practice)**
 
 ## Custom JSP Tags
 
@@ -306,7 +307,7 @@ Steps:
 2. Tag Library descriptor (anyname.tld file) (store in webcontent/WEB_INF)
 3. JSP page to use the tags with Taglib
 
-   click here for custom_jsp_tags.md
+   [click here for Code](https://github.com/rawwkush/Assignment/blob/master/readme/custom_jsp_tags.md.md)
 
 ## Filters
 
@@ -325,7 +326,7 @@ For creating any filter, you must implement the Filter interface. Filter interfa
 2. public void doFilter(HttpServletRequest request,HttpServletResponse response, FilterChain chain)
 3. public void destroy()
 
-click here for filter.md
+[click here for Code](https://github.com/rawwkush/Assignment/blob/master/readme/filter.md)
 
 ---
 
@@ -333,31 +334,33 @@ click here for filter.md
 
 It is a ORM tool.(so we can save our object directly into database)
 
-click here for Annotation code
-Click here for Xml code
+[click here for Annotation code](https://github.com/rawwkush/Assignment/blob/master/readme/basic_hibernate_annotations.md)
+<br>
+
+[Click here for Xml code](https://github.com/rawwkush/Assignment/blob/master/readme/basic_hibernate_xml.md)
 
 ---
 
 # Embedding
 
-click here for embedding.md
+[click here for Code](https://github.com/rawwkush/Assignment/blob/master/readme/hibernate_embedding.md)
 
-### How to save data if Employee have object of Another class called Address.java
+## How to save data if Employee have object of Another class called Address.java
 
 ### Hibernate Relations
 
 1. **One to One**
 
-   - using xml click here
-   - using annotations click here
+   - [using xml](https://github.com/rawwkush/Assignment/blob/master/readme/OnetoOne_xml.md)
+   - [using annotations](https://github.com/rawwkush/Assignment/blob/master/readme/OnetoOne_annotation.md)
 
 2. **OneToMany**
 
-   - click here
-   - click here
+   - [Using XML](https://github.com/rawwkush/Assignment/blob/master/readme/OneToMany_xml.md)
+   - using annotation
 
 3. Many to one
-   - click here
+   - [using xml](https://github.com/rawwkush/Assignment/blob/master/readme/ManyToOne_xml.md)
    - click here
 
 # Limitaions of hibernate
@@ -376,7 +379,7 @@ SessionFactory ----> EntityManagerEntity.
 
 And instead of hibernate.cfg.xml we will use persistence.xml(Inside META-INF folder)
 
-click here to see example (Demo_JPA.md)
+[click here to see example](https://github.com/rawwkush/Assignment/blob/master/readme/Demo_JPA.md)
 
 # Spring
 
@@ -386,11 +389,12 @@ AOP : Aspect oriented Programming
 Aspect-Oriented Programming (AOP) complements Object-Oriented Programming (OOP) by providing another way of thinking about program structure. The key unit of modularity in OOP is the class, whereas in AOP the unit of modularity is the aspect. Aspects enable the modularization of concerns such as transaction management that cut across multiple types and objects.
 (Boilerplater reduction using aspect and templates)
 
-DI; Dependency Injection (Provides looose coupling)
-DI means instead of initialzing attributes of our class by itself we transfers this responsibilty to other class
+> DI; Dependency Injection (Provides looose coupling)<br>
+
+> DI means instead of initialzing attributes of our class by itself we transfers this responsibilty to other class
 
 Example:
-Before DI
+**Before DI**
 
 ```
 public class Employee{
@@ -404,7 +408,7 @@ public class Employee{
 
 ```
 
-After applying DI concept
+**After applying DI concept**
 
 ```
 
@@ -419,12 +423,12 @@ public class Employee{
 
 ```
 
-address a is injected into class employee at run time, by someone else, DI can be done by two ways
+Address a is injected into class employee at run time, by someone else, DI can be done by two ways
 
 1. Constructor Injection
 2. Property Injection (Setter)
 
-click here for spring_hello_world .md
+[click here for Hello World code](https://github.com/rawwkush/Assignment/blob/master/readme/spring_hello_world.md)
 
 # What is a POJO
 
@@ -433,7 +437,8 @@ POJO is plain Old Java Object, this is class which follows below properties
 1. Does not inherit any Framework specific class
 2. Does not implelment interfaces
 3. Does not Contain Annotations
-4. **NOTE: they can implement serializable interface if required**
+
+> **NOTE: they can implement serializable interface if required**
 
 # What is a JavaBean
 
@@ -444,7 +449,7 @@ JAvaBean is a special type of POJO with some restrictions like:
 3. **A default constructor is a must( i.e no argument constructor)**
 4. They Should implement Serializable interface
 
-click here for spring_demo.md
+[click here for demo](https://github.com/rawwkush/Assignment/blob/master/readme/spring_demo.md)
 
 # Bean
 
@@ -456,7 +461,7 @@ objects which are managed by the user
 
 # Working with Annotaion in spring
 
-click here spring_annotation.md
+[click here Code](https://github.com/rawwkush/Assignment/blob/master/readme/spring_annotation.md)
 
 # Service
 
