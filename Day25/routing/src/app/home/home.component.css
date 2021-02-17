@@ -1,0 +1,14 @@
+.card {
+  width: 18rem;
+  float: left;
+  margin: 5px;
+  height: 25rem;
+}
+
+img {
+  height: 15rem;
+}
+
+h1 {
+  color: aliceblue;
+}

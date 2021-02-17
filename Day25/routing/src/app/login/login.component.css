@@ -1,0 +1,10 @@
+.card {
+  opacity: 0.8;
+  color: white;
+  font-family: cursive;
+  font-size: large;
+}
+
+.parent-par {
+  margin-top: 10rem;
+}

@@ -469,6 +469,10 @@ service is a bean which is not pojo but is used to provide some bussiness logic.
 They are also managed by the IOC container but spring knows that they are not Enitity but helpers.
 They are singleton as they are service(although we can change it)
 
+> Spring @Service annotation is used with classes that provide some business
+> functionalities. Spring context will autodetect these classes when
+> annotation-based configuration and classpath scanning is used.
+
 ```
 @Service
 class Calculator{
@@ -479,7 +483,9 @@ class Calculator{
 
 ```
 
-you can use @controller annotation too and it won't really change output but using service annotation increases redability for us as we can know that this is not a Componenet clas but only service.
+you can use @component annotation too and it won't really change output but using service annotation increases redability for us as we can know that this is not a Componenet clas but only service.
+
+> Spring @Service annotation is a specialization of @Component annotation
 
 # Spring Boot = spring - configuration
 

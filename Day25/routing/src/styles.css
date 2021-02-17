@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  background-image: url("https://static3.cbrimages.com/wordpress/wp-content/uploads/2020/09/Death-Note-Light-L-and-Ryuk-Cropped.jpg");
+  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+}
